@@ -82,6 +82,7 @@ int main(){
     printf("3. PIB\n");
     printf("4. Número de pontos turísticos\n");
     printf("5. Densidade demográfica\n");
+    printf("Escolha um tributo: ");
     scanf("%d", &opcao);
 
     switch (opcao) {
@@ -99,8 +100,8 @@ int main(){
       break;
     case 2:
       printf("Tributo: Área\n");
-      printf("%s: %f\n", cidade1, area1);
-      printf("%s: %f\n", cidade2, area2);
+      printf("%s: %.2f\n", cidade1, area1);
+      printf("%s: %.2f\n", cidade2, area2);
         if (area1>area2){
             printf("%s venceu\n", cidade1);
         }else if (area1 == area2){
@@ -111,8 +112,8 @@ int main(){
       break;
     case 3:
       printf("Tributo: PIB\n");
-      printf("%s: %lf\n", cidade1, pib1);
-      printf("%s: %lf\n", cidade2, pib2);
+      printf("%s: %.2lf\n", cidade1, pib1);
+      printf("%s: %.2lf\n", cidade2, pib2);
         if (pib1>pib2){
             printf("%s venceu\n", cidade1);
         }else if (pib1 == pib2){
@@ -135,8 +136,8 @@ int main(){
       break;
     case 5:
       printf("Tributo: Densidade demográfica\n");
-      printf("%s: %f\n", cidade1, densidade_demografica1);
-      printf("%s: %f\n", cidade2, densidade_demografica2);
+      printf("%s: %.2f\n", cidade1, densidade_demografica1);
+      printf("%s: %.2f\n", cidade2, densidade_demografica2);
         if (densidade_demografica2>densidade_demografica1){
             printf("%s venceu\n", cidade1);
         }else if (densidade_demografica1 == densidade_demografica2){
